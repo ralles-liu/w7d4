@@ -1,19 +1,18 @@
 .main-nav {
   display: flex;
-  justify-content: stretch;
+  justify-content: space-between;
   padding: 10px 0px 10px 0px;
 
 }
 
 .left-nav > ul,
 .right-nav > ul {
-  display: flex
-  
+  display: flex;
 
 }
 
 .left-nav {
-  align-items: ;
+  
   
   > ul {
     > li {
@@ -22,7 +21,7 @@
   }
 
   button {
-    background-color: $lightest-gray;
+    background-color: white;
     color: black;
   }
 
@@ -33,7 +32,7 @@
 
 .right-nav  {
   
-  > ul {
+  > ul { 
 
     > li {
   
@@ -41,13 +40,13 @@
 
     > li:last-of-type {
       button {
-        background-color: $lightest-gray;
+        background-color: white;
         color: black;
       }  
     }
   }
   
-  i {
+  i {font-size: 13px;
 
   }
 }
