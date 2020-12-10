@@ -24,9 +24,14 @@
 		color: $dark-gray;
 	}
 
-	ul {
+	ul { 
 		display: flex;
+		
+		li:first-child{
+			font-weight: bold
+		}
 	}
+	
 }
 
 .logo {
@@ -43,7 +48,6 @@
 
 	li {
 		margin-left: 10px;
-		border-right: 1px solid $light-gray;
 	}
 
 	button {
