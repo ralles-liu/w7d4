@@ -1,18 +1,29 @@
 .main-nav {
+  display: flex;
+  justify-content: stretch;
+  padding: 10px 0px 10px 0px;
 
 }
 
 .left-nav > ul,
 .right-nav > ul {
+  display: flex
+  
 
 }
 
 .left-nav {
-
+  align-items: ;
+  
   > ul {
     > li {
 
     }
+  }
+
+  button {
+    background-color: $lightest-gray;
+    color: black;
   }
 
   span {
@@ -21,7 +32,7 @@
 }
 
 .right-nav  {
-
+  
   > ul {
 
     > li {
@@ -29,7 +40,10 @@
     }
 
     > li:last-of-type {
-  
+      button {
+        background-color: $lightest-gray;
+        color: black;
+      }  
     }
   }
   
@@ -40,5 +54,10 @@
 
 .left-nav > ul > li:hover,
 .right-nav > ul > li:last-of-type:hover {
+  button {
+    background-color: $light-gray;
+    border-color: $gray;
+  }
+    
 
 }
