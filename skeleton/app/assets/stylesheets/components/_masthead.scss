@@ -4,6 +4,9 @@
 	align-items: center;
 	border-bottom: 2px solid black;
 	position: relative;
+	border-top: 1px solid $light-gray;
+
+
 }
 
 .language-nav {
@@ -15,6 +18,8 @@
 	border-bottom: none;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
+	
+	
 
 	a {
 		margin: 0 5px;
@@ -22,14 +27,24 @@
 		font-family: $sans-serif;
 		font-size: 10px;
 		color: $dark-gray;
+		text-decoration: none;
 	}
+	a:hover {
+		text-decoration: underline;
+	}
+
+
 
 	ul { 
 		display: flex;
 		
 		li:first-child{
-			font-weight: bold
+			font-weight: bold;
+			
 		}
+		// li:nth-child(2){
+		// 	text-decoration: underline;
+		// }
 	}
 	
 }
@@ -37,6 +52,7 @@
 .logo {
 	max-width: 400px;
 	margin-top: 10px;
+	// border-top: 2px solid $light-gray;
 }
 
 .masthead-links {
@@ -46,8 +62,18 @@
 	margin-top: 10px;
 	margin-bottom: 10px;
 
+	ul {
+		display: flex;
+	}
+
 	li {
 		margin-left: 10px;
+		border-right: 1px solid $light-gray;
+
+	}
+
+	li:last-child {
+		border-right: none;
 	}
 
 	button {
@@ -56,11 +82,14 @@
 		color: #000;
 		font-weight: normal;
 		border: none;
+		margin: 0px;
+		
 	}
 
 	button:hover {
 		background-color: $lightest-gray;
 	}
+
 
 	a,
 	button, 
